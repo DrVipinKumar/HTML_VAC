@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form name="student" action="#" method="get">
+    <div id="nameinfo">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+    </div>
+<div id="pass">
+    <label for="passwd">Password:</label>
+    <input type="password" name="passwd" id="passwd">
+</div>     
+<div id="emailid">
+    <label for="email">Mail ID:</label>
+    <input type="email" name="email" id="email">
+</div> 
+<div id="sage">
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age" min="18" max="120">
+</div> 
+<div id="birthdate">
+    <label for="dob">DOB:</label>
+    <input type="date" name="dob" id="dob">
+</div> 
+<div id="fcolor">
+    <label for="color">Color:</label>
+    <input type="color" name="color" id="color">
+</div> 
+<div id="sgender">
+    <label for="gender">Gender:</label>
+    <input type="radio" name="gender" id="gender">Male
+    <input type="radio" name="gender" id="gender">Female
+</div> 
+<div id="flanguage">
+    <label for="lanuage">Select Computer Language:</label><br>
+    <input type="checkbox" name="c" id="c">C Language <br>
+    <input type="checkbox" name="Java" id="Java">Java Language <br>
+    <input type="checkbox" name="python" id="python">Python Language<br>
+
+</div> 
+<div id="ssection">
+    <label for="section">Section:</label>
+    <select name="section" id="section">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+    </select>
+</div> 
+<div id="sfeedback">
+    <label for="feedback">Feadback:</label>
+    <textarea name="feadback" id="feadback" cols="50" rows="10"></textarea>
+</div> 
+    <div name="submitinfo">
+        <input type="submit" name="submit" value="Send">
+    </div>
+</form>
+</body>
+</html>
