@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Example</title>
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <style type="text/css">
+        #logo{
+          width:100px;
+          height:100px;
+          float: left;
+        }
+        #title{
+            float: left;
+            margin-top:30px;
+            margin-left:20px;
+        }
+        header{
+            background-color:lightblue;
+            height:120px;
+            width: 1024px auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+        <img id="logo" src="image/dvk.png"> <h1 id="title">MCA 1 A Class</h1>
+        </div>
+    </header>
+    <nav>
+        <ul class="menubar">
+            <li id="active"><a href="#">Home</a></li>
+            <li><a href="#">Product</a>
+                <ul class="submenu">
+                    <li><a href="#">Product1</a></li>
+                    <li><a href="#">Product2</a></li>
+                    <li><a href="#">Product3</a></li>
+                    <li><a href="#">Product4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Services</a>
+                <ul class="submenu">
+                    <li><a href="#">Service1</a></li>
+                    <li><a href="#">Service2</a></li>
+                    <li><a href="#">Service3</a></li>
+                    <li><a href="#">Service4</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <section id="content">
+     <section id="maincontent">
+         <h1> Heading 1</h1>
+         <p>
+            This language we use for <i>web site</i> development.
+            <mark>HTML</mark> is a <b>markup language</b>, it full form is HyperText Markup language
+            This language we use for <i>web site</i> development.
+            <mark>HTML</mark> is a <b>markup language</b>, it full form is HyperText Markup language
+            This language we use for <i>web site</i> development.
+         </p>
+     </section>
+     <section id="articles">
+         <article id="article1">
+             <h1>article 1</h1>
+             <p>
+                 This is aritcle 1 for testing
+             </p>
+         </article>
+     </section>
+    </section>
+    <footer>
+        @Copyright: KIET MCA
+    </footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.container{
+    border: 1px solid red;
+    height:100vh;
+}
+.row{
+    border: 1px solid blueviolet;
+    
+}
+.col{
+    border: 1px solid black;
+}

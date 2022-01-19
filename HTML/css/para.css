@@ -1,0 +1,15 @@
+.para1{
+    background-image: url('../image/castle1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+
+}
+
+.para2{
+    background-image: url('../image/castle2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    
+}
