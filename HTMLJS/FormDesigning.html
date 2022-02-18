@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Designing</title>
+    <style>
+        span{
+            color:red;
+        }
+
+        
+    </style>
+    <script >
+        function validate()
+        {
+            let name=document.getElementById("name").value
+            let age=document.getElementById("age").value
+            let email=document.getElementById("email").value 
+            let mobile=document.getElementById("mobile").value 
+            if (name.length<3 || name.length>20)
+                {
+                    document.getElementById("ename").innerHTML="**Name should be between 3 to 20 character"
+                    return false
+                }
+            if(!isNaN(name)){
+                document.getElementById("ename").innerHTML="**Name should not be number"
+                    return false
+            }
+            if(age.length<=0){
+                document.getElementById("eage").innerHTML="**Please enter Age"
+                    return false
+            }
+            if((email.charAt(email.length-4)!=".") && (email.charAt(email.length-3)!="."))
+            {
+                document.getElementById("errmail").innerHTML="**Email is wrong"
+                    return false
+            }
+            if(mobile.length!=10)
+            {
+                document.getElementById("emobile").innerHTML="**Enter complete mobile number"
+                    return false
+            }
+        }
+    </script>
+</head>
+<body>
+    <center>
+    <h1>JavaScript Validation</h1>
+    <form action="#" method="post" enctype="multipart/form-data" onsubmit="return validate();">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name"><br>
+        <span id="ename"></span><br>
+        <label for="age">Age:</label>:</label><br>
+        <input type="number" name="age" id="age"><br>
+        <span id="eage"></span><br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" required><br>
+        <span id="errmail"></span><br>
+        <label for="mobile">Mobile:</label><br>
+        <input type="number" name="mobile" id="mobile"><br>
+        <span id="emobile"></span><br>
+        <input type="submit" name="submit" id="submit" value="Send">
+    </form>
+</center>
+</body>
+</html>
